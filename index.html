@@ -8,7 +8,8 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-  <script src="scripts/moodScripts.js"></script>
+  <script src="scripts/moodChartScripts.js"></script>
+  <script src="scripts/util.js"></script>
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
@@ -21,11 +22,11 @@
   <h3>How did you feel today?</h3>
 
   <div id=moodScale>
-    <img src=moodScale/1hateEverything.png>
-    <img src=moodScale/3irritation.png>
-    <img src=moodScale/5happy.png>
-    <img src=moodScale/8needlesslyworrying.png>
-    <img src=moodScale/11AHHHHHPANIC.png>
+    <img id=1 src=moodScale/1hateEverything.png>
+    <img id=3 src=moodScale/3irritation.png>
+    <img id=5 src=moodScale/5happy.png>
+    <img id=8 src=moodScale/8needlesslyworrying.png>
+    <img id=11 src=moodScale/11AHHHHHPANIC.png>
   </div>
 
   <form>
@@ -36,10 +37,6 @@
 
   <div id=curve_chart style='width: 900px; height: 500px'>
   </div>
-
-  <footer>
-      &copy; 2015 Lisa Hackenberger
-  </footer>
 
 </body>
 

@@ -1,18 +1,32 @@
-// used in voteScripts.js
-function takeOne(arr) {
-  var deletedItems = arr.splice(randomIndex(arr), 1);
-  return deletedItems[0];
-}
+$(function() {
+  $('#1').click(function() {
+    $('input').val('1');
+  });
 
-// used by takeOne()
-function randomIndex(arr) {
-  return Math.floor(Math.random() * arr.length);
-}
+  $('#3').click(function() {
+    $('input').val('3');
+  });
+
+  $('#5').click(function() {
+    $('input').val('5');
+  });
+
+  $('#8').click(function() {
+    $('input').val('8');
+  });
+
+  $('#11').click(function() {
+    $('input').val('11');
+  });
 
 
-// Configuration
-if (typeof exports !== 'undefined') {
-  exports._test = {
-    takeOne: takeOne
-  };
-}
+  $('input').on('keypress', function(e){
+    if(event.which === 13) {
+      console.log('the value is ' + $('input').val())
+      // $(this).attr('disabled', 'disabled');
+      $('data').makeArray([fullDate, $('input').val()])
+    }
+  });
+
+
+});
