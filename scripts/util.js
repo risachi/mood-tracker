@@ -24,7 +24,8 @@ $(function() {
     if(event.which === 13) {
       console.log('the value is ' + $('input').val())
       // $(this).attr('disabled', 'disabled');
-      $('data').makeArray([fullDate, $('input').val()])
+      var newDataPoint = jQuery.makeArray([fullDate, $('input').val()]);
+      $(data).append(newDataPoint);
     }
   });
 

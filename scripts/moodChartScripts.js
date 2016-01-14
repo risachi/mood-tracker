@@ -23,6 +23,9 @@ $(function() {
       ['1/13/2016', 3]
     ]);
 
+    // var data = google.visualization.arrayToDataTable(scores);
+
+
     var options = {
       title: 'Mood Chart',
       curveType: 'function',

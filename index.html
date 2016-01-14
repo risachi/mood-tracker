@@ -16,12 +16,12 @@
   <title>Which will YOU choose!?</title>
 </head>
 
-<body>
+<body id=flex-body class=container>
   <h1>My Code 301 Mood Tracker</h1>
 
   <h3>How did you feel today?</h3>
 
-  <div id=moodScale>
+  <div id=moodScale class=container>
     <img id=1 src=moodScale/1hateEverything.png>
     <img id=3 src=moodScale/3irritation.png>
     <img id=5 src=moodScale/5happy.png>
@@ -31,11 +31,15 @@
 
   <form>
     <label>
-      Enter a number between 1-11 <input type="number" name='quantity' min='1' max='11'>
+      Enter a number between 1-10 <input type="number" name='quantity' min='1' max='11'>
     </label>
   </form>
 
   <div id=curve_chart style='width: 900px; height: 500px'>
+  </div>
+
+  <div>
+    <!-- Suggest an appropriate image to show based on the score given that day. -->
   </div>
 
 </body>
