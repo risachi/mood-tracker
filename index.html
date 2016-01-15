@@ -5,8 +5,11 @@
   <link href='https://fonts.googleapis.com/css?family=Titan+One|Hind|Muli' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="moodScaleStyles.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="scripts/moodChartScripts.js"></script>
   <script src="scripts/util.js"></script>
@@ -29,13 +32,14 @@
     <img id=11 src=moodScale/11AHHHHHPANIC.png>
   </div>
 
-  <form>
+  <form class=hidden>
     <label>
-      Enter a number between 1-10 <input type="number" name='quantity' min='1' max='11'>
+      Enter a number between 1-10
+      <input type="number" name='quantity' min='1' max='11'>
     </label>
   </form>
 
-  <div id=curve_chart style='width: 900px; height: 500px'>
+  <div id=curve_chart style='width: 900px; height: 500px' class=hidden>
   </div>
 
   <div>
