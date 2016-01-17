@@ -22,7 +22,7 @@ $(function() {
 
   $('input').on('keypress', function(e) {
     if (event.which === 13) {
-      console.log('the value is ' + $('input').val())
+      console.log('the value is ' + $('input').val());
         // $(this).attr('disabled', 'disabled');
       var newDataPoint = jQuery.makeArray([fullDate, $('input').val()]);
       $(data).append(newDataPoint);
@@ -31,7 +31,7 @@ $(function() {
 
   $(window).on('orientationchange', function(event) {
     $('div').toggleClass('hidden');
-    console.log('This device is in ' + event.orientation + ' mode.')
+    console.log('This device is in ' + event.orientation + ' mode.');
   });
 
 
