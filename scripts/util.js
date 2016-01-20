@@ -3,6 +3,7 @@ $(function() {
   // refactor to create a generic function that takes the value of each image and puts the value in the input box
   $('#1').click(function() {
     $('input').val('1');
+    parseInt($('img')[3].id);
   });
 
   $('#3').click(function() {
@@ -21,7 +22,7 @@ $(function() {
     $('input').val('11');
   });
 
-// need to refactor this to be functional ((dataPoints).push(newDataPoint))
+  // need to refactor this to be functional ((dataPoints).push(newDataPoint))
   $('input').on('keypress', function(e) {
     if (event.which === 13) {
       event.preventDefault();
@@ -29,6 +30,7 @@ $(function() {
       var newDataPoint = $.makeArray([fullDate, $('input').val()]);
       console.log(newDataPoint);
       (dataPoints).push(newDataPoint);
+      drawChart();
     }
   });
 
@@ -38,6 +40,5 @@ $(function() {
   } else {
     console.log('This device is in landscape mode.');
   }
-
 
 });
