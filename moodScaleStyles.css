@@ -1,22 +1,28 @@
 .container {
   display: flex;
 }
-.hidden {
+
+/*.hidden {
   display: none;
-}
+}*/
+
 h1 {
   font-size: 4em;
 }
+
 h3 {
   font-size: 3em;
 }
+
 img {
   width: 15%;
 }
+
 #flex-body {
   flex-direction: column;
   align-items: center;
 }
+
 #moodScale {
   flex-direction: row;
   flex-wrap: nowrap;

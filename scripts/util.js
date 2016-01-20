@@ -1,4 +1,6 @@
 $(function() {
+
+  // refactor to create a generic function that takes the value of each image and puts the value in the input box
   $('#1').click(function() {
     $('input').val('1');
   });
@@ -19,21 +21,23 @@ $(function() {
     $('input').val('11');
   });
 
-
+// need to refactor this to be functional ((dataPoints).push(newDataPoint))
   $('input').on('keypress', function(e) {
     if (event.which === 13) {
+      event.preventDefault();
       console.log('the value is ' + $('input').val());
-        // $(this).attr('disabled', 'disabled');
-      var newDataPoint = jQuery.makeArray([fullDate, $('input').val()]);
-      $(data).append(newDataPoint);
+      var newDataPoint = $.makeArray([fullDate, $('input').val()]);
+      console.log(newDataPoint);
+      (dataPoints).push(newDataPoint);
     }
   });
 
-  $(window).on('orientationchange', function(event) {
-    $('div').toggleClass('hidden');
-    console.log('This device is in ' + event.orientation + ' mode.');
-  });
-
+  if ($(window).height() > $(window).width()) {
+    console.log('This device is in portrait mode.');
+    $('.hideInPortrait').hide();
+  } else {
+    console.log('This device is in landscape mode.');
+  }
 
 
 });
