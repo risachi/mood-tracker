@@ -2,10 +2,6 @@
   display: flex;
 }
 
-/*.hidden {
-  display: none;
-}*/
-
 h1 {
   font-size: 4em;
 }
@@ -28,4 +24,10 @@ img {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: baseline;
+}
+
+#curve_chart {
+  border-color: green;
+  border-width: thick;
+  background-color: red;
 }

@@ -16,6 +16,10 @@ function drawChart() {
       position: 'bottom'
     },
     lineWidth: 5,
+    // chartArea: {
+    //   width:'50%',
+    //   height: 500
+    // },
     hAxis: {
       title: 'Date',
       slantedText: 'true'
