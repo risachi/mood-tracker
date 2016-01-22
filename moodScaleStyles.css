@@ -25,9 +25,3 @@ img {
   justify-content: space-around;
   align-items: baseline;
 }
-
-#curve_chart {
-  border-color: green;
-  border-width: thick;
-  background-color: red;
-}

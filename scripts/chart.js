@@ -6,29 +6,30 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable(dataPoints);
 
-  // var data = google.visualization.arrayToDataTable(scores);
-
-
   var options = {
     title: 'Mood Chart',
     curveType: 'function',
     legend: {
       position: 'bottom'
     },
+    height: 500,
+    width: 1000,
     lineWidth: 5,
-    // chartArea: {
-    //   width:'50%',
-    //   height: 500
-    // },
+    pointSize: 10,
+    dataOpacity: 0.5,
     hAxis: {
       title: 'Date',
-      slantedText: 'true'
+      slantedText: 'true',
+      gridlines: {
+        count: -1
+      }
     },
     vAxis: {
       title: 'Mood Score',
-      viewWindow: {
-        maxValue: 11,
-        minValue: 1
+      maxValue: 11,
+      minValue: 1,
+      gridlines: {
+        count: -1
       }
     }
   };
