@@ -19,3 +19,12 @@ var day = date.getDate();
 var month = date.getMonth() + 1;
 var year = date.getFullYear();
 var fullDate = (month + "/" + day + "/" + year);
+
+var numbers = dataPoints.filter(function(thing) {
+    return Number.isInteger(thing[1]);
+  })
+  .map(function(thing) {
+    return thing[1];
+  });
+
+console.log(numbers);
