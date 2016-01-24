@@ -25,3 +25,7 @@ img {
   justify-content: space-around;
   align-items: baseline;
 }
+
+#avg {
+  display: inline;
+}

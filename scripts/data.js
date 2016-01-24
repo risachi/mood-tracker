@@ -11,7 +11,8 @@ var dataPoints = [
   ['1/14/2016', 5],
   ['1/16/2016', 7],
   ['1/18/2016', 1],
-  ['1/20/2016', 9]
+  ['1/20/2016', 9],
+  ['1/23/2016', 11]
 ];
 
 var date = new Date();
@@ -20,11 +21,18 @@ var month = date.getMonth() + 1;
 var year = date.getFullYear();
 var fullDate = (month + "/" + day + "/" + year);
 
-var numbers = dataPoints.filter(function(thing) {
-    return Number.isInteger(thing[1]);
+var scores = dataPoints.filter(function(dataPoint) {
+    return Number.isInteger(dataPoint[1]);
   })
-  .map(function(thing) {
-    return thing[1];
+  .map(function(dataPoint) {
+    return dataPoint[1];
   });
 
-console.log(numbers);
+console.log(scores);
+
+var sum = scores.reduce(function(a, b) {
+  return a + b;
+});
+
+var average = (sum / scores.length).toFixed(1);
+$('#avg').html(average);
