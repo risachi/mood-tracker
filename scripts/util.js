@@ -17,4 +17,12 @@ $(function() {
     console.log('This device is in landscape mode.');
   }
 
+
+  // GIPHY API
+  // https://github.com/Giphy/GiphyAPI
+
+  // When the user visits the page and sees their average, a link prompts the user to find a random gif depending upon their average score.
+
+  // When the user records their mood score, the above link changes to prompt the user to find a random gif depending upon the score they just recorded.
+
 });
