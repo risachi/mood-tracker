@@ -28,8 +28,6 @@ var scores = dataPoints.filter(function(dataPoint) {
     return dataPoint[1];
   });
 
-console.log(scores);
-
 var sum = scores.reduce(function(a, b) {
   return a + b;
 });
