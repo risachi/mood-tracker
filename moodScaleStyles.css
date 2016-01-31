@@ -3,11 +3,11 @@
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 5vw;
 }
 
 h3 {
-  font-size: 3em;
+  font-size: 3vw;
 }
 
 img {
@@ -28,5 +28,5 @@ img {
 
 #avg {
   display: inline;
-  font-size: 
+  font-size:
 }
