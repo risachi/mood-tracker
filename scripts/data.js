@@ -31,12 +31,13 @@ var scores = dataPoints.filter(function(dataPoint) {
     return dataPoint[1];
   });
 
-var sum = scores.reduce(function(a, b) {
-  return a + b;
-});
+calculateAverage(scores);
 
-function calculateAverage(sum, score) {
-  var average = (sum / scores.length).toFixed(1);
+function calculateAverage(numbers) {
+  var sum = numbers.reduce(function(a, b) {
+    return a + b;
+  });
+  var average = (sum / numbers.length).toFixed(1);
   $('#avg').html(average);
   return average;
 }

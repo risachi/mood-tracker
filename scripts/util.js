@@ -8,6 +8,7 @@ $(function() {
     console.log(newDataPoint);
     (dataPoints).push(newDataPoint);
     drawChart();
+    calculateAverage(scores);
   });
 
   if ($(window).height() > $(window).width()) {
