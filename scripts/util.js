@@ -16,7 +16,10 @@ $(function() {
     $('#curve_chart').hide();
   } else {
     console.log('This device is in landscape mode.');
+    // attempt to toggle class such that in portrait mode, the average score is displayed prominently where the chart would normally appear
   }
+
+
 
 
   // GIPHY API
